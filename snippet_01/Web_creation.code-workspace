@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../Web_creation"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "snippet_01"
+	}
+}
