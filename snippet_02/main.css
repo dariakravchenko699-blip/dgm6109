@@ -1,0 +1,72 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 1rem;
+    font-size: 1rem; /* from the class recording and google fonts because I wanted to try Roboto font-family */
+
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #3D4399; /* from class recording */
+}
+
+nav {
+    text-align: center;
+}
+
+h2, h3, h4 {
+    text-align: center;
+    color: #6F91D9;
+    margin-top: 30px;
+}
+
+.nav-main {
+    background-color: #3D4399;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+.nav-main:hover, .nav-main:focus {
+    background-color: #D9D16F;
+    color: white;
+}
+
+p {
+    max-width: 100rem;
+    text-align: center;
+    margin-bottom: 0;
+
+}
+
+img {
+    max-width: 100rem;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.final {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.poster {
+    border-radius: 50%;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+a {
+    transition-property: color;
+    transition-duration: 0.5s;
+}
+a:hover, a:focus {
+    color: #D9D16F;
+
+}
