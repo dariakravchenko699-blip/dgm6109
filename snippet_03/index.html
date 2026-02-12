@@ -1,0 +1,91 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Style Guide</title>
+
+        <link rel="stylesheet" href="css/grid.css">
+        <link rel="stylesheet" href="css/main.css">
+
+    </head>
+
+    <body>
+        <!-- Navigation and the title of the page. Interestingly, 
+         I wasn't able to combine <h1> with <nav> so that they from one horizontal menu window with grids -->
+        <header>
+            <nav>
+                <div class="grid two-column four-column add-gutters">
+                    <h1 id="logo">style guide</h1>
+                    <a href="#Text-Styles" class="menu-item">Text Styles</a>
+                    <a href="#Colour-palette" class="menu-item">Colour Palette</a>
+                    <a href="#Buttons" class="menu-item">Buttons</a>
+                    <a href="#Form" class="menu-item">Form Menu</a>
+                </div>
+            </nav>
+        </header>
+
+        <hr>
+
+        <!-- Text Styles section -->
+        <section id="text-styles">
+
+            <h1 class="title">Text Styles</h1><!-- Title of the section -->
+
+            <h1>H1. The Boldest and Most Recognisable font</h1><!-- List of text headers -->
+            <h2>H2. Section header</h2>
+            <h3>h3. Subsection header</h3>
+            <p>The website primary text style is Helvetica 
+                which is loaded onto all machines but in case it's 
+                not can be found at<a href="https://fonts.google.com/">Google Fonts.</a>
+                Blablablablablablablablabalbalabalbalbalablaalbalal</p>
+            <h4>h4: Small label</h4>
+
+            <hr>
+
+        </section>
+
+        <!-- Colour Palette section -->
+        <section id="colour-palette">
+
+            <h1 class="title">Color Palette</h1><!-- Title of the section -->
+
+            <div class="palette"><!-- List of colored boxes in the palette section -->
+                <div class="color-box pink"><!-- First colou box -->
+                    <p class="color-code">#FFA3FF</p>
+                </div>
+                <div class="color-box red">
+                    <p class="color-code">#EF3B98</p>
+                </div>
+                 <div class="color-box purple">
+                    <p class="color-code">#9681FF</p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Buttons section -->
+        <section id="Buttons">
+
+            <h1 class="title">Buttons</h1>
+
+            <figure class="buttons">
+                <a href="https://www.flaticon.com/free-icon/play_8333941?term=web+design+buttons&page=1&position=91&origin=search&related_id=8333941"><img src="img/play.png" alt="Play Button"  style="width:95px;height:95px"></a>
+
+                <a href="https://www.flaticon.com/free-icon/speed-test_17055726?term=web+design+buttons&page=2&position=83&origin=search&related_id=17055726"><img src="img/speed-test.png" alt="Speed Button"  style="width:95px;height:95px"></a>
+            </figure>
+        </section>
+
+        <hr>
+
+        <section id="Form">
+            <h1 class="title">Input Field</h1>
+            <p>Form field <input id="input" type="text"></p>
+            <button id="submit">Submit</button>
+        </section>
+
+    </body>
+</html>

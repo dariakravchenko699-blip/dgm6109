@@ -1,0 +1,118 @@
+* {
+    margin: 0.8rem;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, p {
+    color:#ef3b98;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0%;
+} 
+
+hr {
+    border-top: 1px solid #ef3b98;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+a {
+    color:#ef3b98;
+	transition-property: color;
+	transition-duration: 0.5s;
+}
+
+a:hover, a:focus {
+	color: #9681FF;
+	text-decoration: none;
+}
+
+h2, h3, h4 {
+    font-weight: normal;
+    margin-bottom: 0%;
+
+}
+.title {
+    color: #ef3b98;
+    font-style: italic;
+    font-size: 0.8rem;
+    text-transform: uppercase; 
+    /* all text modification properties 
+    taken from W3School website */
+}
+
+.menu-item {
+	display: inline-block;
+	color: #ef3b98;
+	background-color: #FFA3FF;
+	font-size: 0.8rem;
+	padding: 0.6rem 0.75rem;
+    text-transform: uppercase; 
+    font-style: italic;
+    text-align: center;
+    font-weight: bold;
+	text-decoration: none;
+    border-radius: 8px;
+
+	transition-property: background-color;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-out;
+}
+
+.menu-item:active, .menu-item:hover, .menu-item:focus {
+    color:white;
+    background-color: #9681FF;
+}
+#logo, #logo * {
+    color: #ef3b98;
+}
+
+.palette {
+    display: flex;
+    gap: 0rem;
+}
+
+/* instructions on how to use flexbox 
+to create boxes was found online and through 
+additional class materials */
+.color-box {
+    width: 6.25rem;
+    height: 6.25rem;
+    display: flex; 
+    font-weight: bold;
+}
+.color-code {
+    font-style: italic;
+    font-size: 0.8rem;
+    color: white;
+}
+.color-box.pink {
+    background-color: #FFA3FF;
+    border-radius: 8px;
+}
+.color-box.red {
+    background-color: #ef3b98;
+    border-radius: 8px;
+}
+.color-box.purple {
+    background-color: #9681FF;
+    border-radius: 8px;
+    
+}
+
+
+img {
+    transition-property: opacity;
+	transition-duration: 0.5s;
+}
+img:hover, img:focus {
+    opacity: 0.5;
+	text-decoration: none;
+}
+
