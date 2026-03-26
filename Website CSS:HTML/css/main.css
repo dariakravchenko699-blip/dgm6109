@@ -1,0 +1,696 @@
+
+* {
+  margin: 0; /*removes default browser margins and padding to style them from scratch*/
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%; /* for responsiveness */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fafafa;
+  color: #2f1d28;
+}
+
+/* HEADER */
+
+header {
+  background: #fafafa;
+  padding: 1.2rem 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.top-nav ul {
+  list-style: none;
+  display: flex; /* different from grid but I always wanted to try it and it seems easier*/
+  align-items: center;
+  justify-content: space-between; /*creates auotoresponsive spacing between the items in the header*/
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+#logo {
+  font-size: 2.5rem;
+  margin-right: auto;
+}
+
+.menu-item {
+  text-decoration: none;
+  color: #2f1d28;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.menu-item:hover {
+  color: #ef9d5a;
+}
+
+/* button:hover {
+  cursor: pointer;
+}
+*/
+
+/* HERO SECTION */
+
+.hero {
+  position: relative;
+  height: 75rem; /* prevent the image from being stretched out vertically*/
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-content {
+  position: relative; /*allows the use of top: 50% */
+  z-index: 2; /* controls layer order and makes sure the text is on top of the video */
+  color: white;
+  text-align: left;
+  margin-left: 4rem;
+  top: 40%;
+  font-size: 3rem;
+  transform: translateY(-50%);
+}
+
+/*  FREE COURSE SECTION */
+.free-course {
+  background: #e8ae63;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.5rem;
+  padding-left: 2.5rem;
+  padding-top: 4rem;
+}
+
+.free-course-text {
+  margin-left: 5rem;
+  width: 45%;
+}
+
+.free-course-text h3 {
+  font-size: 4rem;
+  margin-bottom: 8rem;
+  font-weight: bold;
+}
+
+.free-course-text h2 {
+  font-size: 10rem;
+  line-height: 0.95;
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+
+.free-course-text p {
+  color: #577ae6;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+
+
+.free-course button,
+.instructors button {
+  background: #2f1d28;
+  color: #e8ae63;
+  border: none;
+  padding: 1rem 1.7rem;
+  font-size: 2rem;
+  border-radius: 0.6rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 4rem;
+  margin-bottom: 7rem;
+  
+}
+
+.free-course button:hover,
+.instructors button:hover {
+  background: #6b5a93;
+}
+
+.free-course > img {
+  width: 48%;
+  border-radius: 1.5rem;
+ 
+}
+
+button {
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+/*  CATALOGUE SECTION */
+
+.catalogue {
+  background: #f6e6e8;
+  padding: 4rem 2.5rem 20rem;
+  background-image: url("../img/squiggles.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.catalogue h2 {
+  font-size: 3rem;
+  margin-bottom: 2.5rem;
+  font-weight: 800;
+  margin-left: 4rem;
+}
+
+.cards {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.card {
+  width: 18%;
+  background: rgb(229, 180, 128, 0.9);
+  border-radius: 1rem;
+  padding: 0.7rem;
+  height: 35rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.card img {
+  width: 100%;
+  height: 19.5rem;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  background: #ead2d6;
+}
+
+.card h3 {
+  font-size: 2.6rem;
+  margin-top: 5rem;
+  margin-left: 0.5rem;
+}
+
+.card p {
+  font-size: 1.8rem;
+  margin-top: 0.7rem;
+  margin-left: 0.5rem;
+  color: #ef6b5c;
+  font-weight: bold;
+}
+
+/*  WHY US SECTION*/
+.us {
+  background: #fafafa;;
+  text-align: center;
+  padding: 5rem 4rem 13rem;
+}
+
+.us h2 {
+  color: #ef6b5c;
+  font-size: 5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 800;
+}
+
+.us hr {
+  width: 28rem;
+  margin: 0 auto 13rem ;
+  border: none;
+  border-top: 0.1rem solid rgba(47, 29, 40);
+
+}
+
+.set {
+  display: flex;
+  justify-content: space-around;
+  gap: 3.4rem;
+  flex-wrap: wrap;
+}
+
+.set-item {
+  width: 15rem;
+}
+
+.set-item img {
+  width: 20rem;
+  height: 20rem;
+  object-fit: contain;
+  margin: 0 auto 1.5rem;
+}
+
+.set-item p {
+  font-size: 2rem;
+}
+
+/* INSTRUCTORS SECTION */
+
+.instructors {
+  background: #e8ae63;
+  padding: 3rem 4rem 9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  margin-bottom: 7rem;
+}
+
+.instructors-text {
+  color: rgba(47, 29, 40);
+  font-size: 5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 800;
+  margin-left: 5rem;
+  margin-top: 7rem;
+}
+
+.instructors hr {
+  width: 70rem;
+  margin: 0 auto 13rem ;
+  border: none;
+  margin-top: 2rem;
+  border-top: 0.3rem solid rgba(47, 29, 40);
+}
+
+.teachers {
+  display: grid;
+  grid-template-columns: repeat(3, 13rem);
+  gap: 2rem;
+  margin: 6rem auto 0;
+}
+
+.teacher img {
+  width: 13rem;
+  height: 13rem;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+
+
+/* FOOTER SECTION */
+
+.footer {
+  background: #efefef;
+  padding: 14rem 6rem 10rem;
+}
+
+/* top part */
+.top-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10rem;
+  margin-top: 5rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+/* headings */
+.social h2,
+.newsletter h2,
+.catalogue-search h1 {
+  font-size: 3.3rem;
+  line-height: 1.1;
+  font-weight: 800;
+  color: #222;
+  margin-bottom: 3rem;
+}
+
+/* social block */
+.social {
+  margin-left: 6rem;
+}
+
+.icons {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.icons img {
+  width: 5.2rem;
+  height: 5.2rem;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+/* newsletter block */
+.newsletter {
+  margin-right: 8rem;
+}
+
+.catalogue-search {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  text-align: center;
+}
+
+.subscribe-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 42rem;
+  border: 1px solid #cfcfcf;
+  border-radius: 999px;
+  padding: 0.7rem 1.2rem 0.7rem 1.8rem;
+  background: transparent;
+}
+
+
+.subscribe-box input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 1.4rem;
+  width: 100%;
+  color: #222;
+}
+
+.subscribe-box input::placeholder {
+  color: #b8b8b8;
+}
+
+.catalogue-search-box input::placeholder {
+  color: #b8b8b8;
+}
+
+.search-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.search-btn img {
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+}
+
+/* bottom nav */
+.bottom-nav ul {
+  list-style: none;
+  display: flex; 
+  align-items: center;
+  justify-content: space-between; 
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-bottom: 3rem;
+  margin-top: 5rem;
+}
+
+.bottom-nav li {
+  display: flex;
+  align-items: center;
+}
+
+.bottom-nav a {
+  text-decoration: none;
+  color: #111;
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+.nav-search-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  display: block;
+}
+.nav-search-btn img {
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
+  display: block;
+}
+
+/* COURSES PAGE CATALOGUE-SEARCH BUTTON*/
+
+.catalogue-search-box {
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 999px;
+  padding: 1.2rem 1.8rem;
+  background-color: #f0e8e8;
+}
+
+.catalogue-search-box input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 2rem;
+  color: #222;
+  box-shadow: none;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.catalogue-search-box input::placeholder {
+  color: #666;
+}
+
+.search-btn {
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+/* LIVE CLASSES SECTION PAGE */
+.live-class {
+  display: grid;
+  grid-template-columns: 18rem 1fr 20rem auto;
+  align-items: center;
+  gap: 3rem;
+  padding: 6rem 4rem;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+}
+
+.class-thumb {
+  width: 18rem;
+  height: 18rem;
+  object-fit: cover;
+  display: block;
+}
+
+.class-info h3 {
+  font-size: 3.2rem;
+  line-height: 1.1;
+  font-weight: 800;
+  margin-bottom: 3rem;
+  color: #000;
+}
+
+.class-info p {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000;
+}
+
+.class-price {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #000;
+  text-align: center;
+}
+
+.cart-btn {
+  background: #2b2b2b;
+  color: #e8c26a;
+  border: none;
+  border-radius: 1rem;
+  padding: 1.5rem 2.5rem;
+  font-size: 2rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+/* FREE COURSE PAGE STYLING */
+
+.outline {
+  background: #ede7db;
+  padding: 3rem 4rem 4rem;
+}
+
+.outline h2 {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 800;
+  color: #e2b760;
+  margin-bottom: 5rem;
+}
+
+.outline-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 8rem;
+  row-gap: 4rem;
+  max-width: 130rem;
+  margin: 0 auto 6rem;
+}
+
+.outline-item {
+  display: grid;
+  grid-template-columns: 6rem 1fr;
+  align-items: start;
+  column-gap: 2rem;
+}
+
+.number {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #000;
+  line-height: 1;
+  margin-top: 0.3rem;
+}
+
+.outline-item p {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.15;
+  color: #000;
+}
+
+.register-btn {
+  display: block;
+  margin: 0 auto;
+  background: #2f2f31;
+  color: #e2b760;
+  border: none;
+  border-radius: 1rem;
+  padding: 1.2rem 3.5rem;
+  font-size: 3rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.register-btn:hover {
+  background: #444;
+}
+
+/* MEDIA QUERIES*/
+
+@media (max-width: 900px) {
+  .cards {
+    gap: 0.5rem;
+
+  }
+  .card {
+    width: 30%;
+
+  }
+  .card h3 {
+    font-size: 1.8rem;
+  }
+  .card p {
+    font-size: 1.4rem;
+  }
+ 
+}
+
+@media (max-width: 600px) {
+  .cards {
+    gap: 0.3rem;
+
+  }
+   .card {
+    width: 80%;
+    padding: 0.5rem;
+  }
+  .card h3 {
+    font-size: 1.5rem;
+  }
+  .card p {
+    font-size: 1.2rem;
+  }
+}
+
+
+@media (max-width: 900px) {
+  .live-class {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .class-thumb {
+    margin: 0 auto;
+  }
+
+  .cart-btn {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .instructors {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .teachers {
+    grid-template-columns: repeat(2, 10rem);
+  }
+}
+
+@media (max-width: 600px) {
+  .free-course-text h2 {
+    font-size: 5rem;
+  }
+
+  .outline h2 {
+    font-size: 3rem;
+  }
+
+  .outline-item p {
+    font-size: 2rem;
+  }
+
+  .number {
+    font-size: 2rem;
+  }
+
+  .register-btn {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .catalogue-search-box {
+    padding: 1rem;
+  }
+
+  .catalogue-search-box input {
+    font-size: 1.6rem;
+  }
+}
